@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de Noms</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2em;
+            font-weight: 600;
+        }
+        .name-list {
+            list-style: none;
+            padding: 0;
+        }
+        .name-item {
+            margin: 15px 0;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .name-item:hover {
+            background: #e0f7fa;
+            box-shadow: 0 4px 20px rgba(0, 123, 255, 0.2);
+        }
+        .sub-options {
+            display: none;
+            padding-left: 20px;
+            margin-top: 5px;
+            border-left: 3px solid #007BFF;
+            padding: 10px;
+            background: #e8f0fe;
+            border-radius: 5px;
+        }
+        .sub-options li {
+            margin: 5px 0;
+            color: #555;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Liste des piliers et leurs disciples</h1>
+    <ul class="name-list">
+        <li class="name-item">Ruth Amundala
+            <ul class="sub-options">
+                <li>Gédéon (Paul)</li>
+            </ul>
+        </li>
+        <li class="name-item">Régina Yamina
+            <ul class="sub-options">
+                <li>Maman Marie Louise</li>
+            </ul>
+        </li>
+        <li class="name-item">Christopher
+            <ul class="sub-options">
+                <li>Marc</li>
+            </ul>
+        </li>
+        <li class="name-item">Gaël
+            <ul class="sub-options">
+                <li>Marc (maman Carine)</li>
+            </ul>
+        </li>
+        <li class="name-item">Gloire
+            <ul class="sub-options">
+                <li>Paul</li>
+            </ul>
+        </li>
+        <li class="name-item">Mirah
+            <ul class="sub-options">
+                <li>Rebecca (Paul)</li>
+            </ul>
+        </li>
+        <li class="name-item">Israël
+            <ul class="sub-options">
+                <li>Paul</li>
+            </ul>
+        </li>
+        <li class="name-item">Mechack
+            <ul class="sub-options">
+                <li>Rébecca</li>
+            </ul>
+        </li>
+        <li class="name-item">Mélissa
+            <ul class="sub-options">
+                <li>Gedeon (Marc)</li>
+            </ul>
+        </li>
+        <li class="name-item">Daniel Buba
+            <ul class="sub-options">
+                <li>Gédéon (Marc)</li>
+            </ul>
+        </li>
+        <li class="name-item">Daniel Shabani
+            <ul class="sub-options">
+                <li>Sarah</li>
+            </ul>
+        </li>
+        <li class="name-item">Cédric
+            <ul class="sub-options">
+                <li>Rebecca</li>
+            </ul>
+        </li>
+        <li class="name-item">Raphaël
+            <ul class="sub-options">
+                <li>Paul (Rebecca)</li>
+            </ul>
+        </li>
+        <li class="name-item">Abel
+            <ul class="sub-options">
+                <li>Keren</li>
+            </ul>
+        </li>
+        <li class="name-item">Exaucé
+            <ul class="sub-options">
+                <li>Paul</li>
+            </ul>
+        </li>
+        <li class="name-item">Gold
+            <ul class="sub-options">
+                <li>Gédéon (Sarah)</li>
+            </ul>
+        </li>
+        <li class="name-item">Esther Enzuni
+            <ul class="sub-options">
+                <li>Rebecca (Paul)</li>
+            </ul>
+        </li>
+        <li class="name-item">Anicet
+            <ul class="sub-options">
+                <li>Ma2 Carine</li>
+            </ul>
+        </li>
+        <li class="name-item">Samuel
+            <ul class="sub-options">
+                <li>Keren</li>
+            </ul>
+        </li>
+        <li class="name-item">Herclay
+            <ul class="sub-options">
+                <li>Paul</li>
+            </ul>
+        </li>
+        <li class="name-item">Amilia
+            <ul class="sub-options">
+                <li>Marc</li>
+            </ul>
+        </li>
+        <li class="name-item">July
+            <ul class="sub-options">
+                <li>Keren (Marc)</li>
+            </ul>
+        </li>
+        <li class="name-item">Pedro
+            <ul class="sub-options">
+                <li>Gédéon</li>
+            </ul>
+        </li>
+        <li class="name-item">Aristote
+            <ul class="sub-options">
+                <li>Gédéon</li>
+            </ul>
+        </li>
+        <li class="name-item">Evo
+            <ul class="sub-options">
+                <li>Gédéon (Paul)</li>
+            </ul>
+        </li>
+        <li class="name-item">Joseph
+            <ul class="sub-options">
+                <li>Paul</li>
+            </ul>
+        </li>
+        <li class="name-item">Estimée
+            <ul class="sub-options">
+                <li>Marc</li>
+            </ul>
+        </li>
+        <li class="name-item">Tryphène
+            <ul class="sub-options">
+                <li>Marc</li>
+            </ul>
+        </li>
+        <li class="name-item">Médard
+            <ul class="sub-options">
+                <li>Marc (Keren)</li>
+            </ul>
+        </li>
+        <li class="name-item">Daniel Buba
+            <ul class="sub-options">
+                <li>Gédéon (Marc)</li>
+            </ul>
+        </li>
+        <li class="name-item">Esther Lus
+            <ul class="sub-options">
+                <li>Paul (Marc)</li>
+            </ul>
+        </li>
+        <li class="name-item">Allegra
+            <ul class="sub-options">
+                <li>Paul</li>
+            </ul>
+        </li>
+        <li class="name-item">Daniel Muderhwa
+            <ul class="sub-options">
+                <li>Sarah</li>
+            </ul>
+        </li>
+        <li class="name-item">Franck
+            <ul class="sub-options">
+                <li>Paul</li>
+            </ul>
+        </li>
+        <li class="name-item">Glodi
+            <ul class="sub-options">
+                <li>Marc</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script>
+    document.querySelectorAll('.name-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const subOptions = item.querySelector('.sub-options');
+            subOptions.style.display = subOptions.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>
