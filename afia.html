@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circular Progress Bars</title>
+  <style>
+    .progress-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      justify-items: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .circular-progress {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circular-progress-fill {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #4CAF50;
+    }
+
+    .circular-progress-fill span {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .circular-progress-bar {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-image: conic-gradient(#4CAF50 0%, #4CAF50 0%, #f2f2f2 0%);
+      animation: rotate 1s linear infinite;
+      transform: rotate(-90deg);
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(270deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress-container">
+    <div class="circular-progress">
+      <div class="circular-progress-bar" id="progress-bar-1"></div>
+      <div class="circular-progress-fill">
+        <span id="progress-text-1">0%</span>
+        <span>completed</span>
+      </div>
+    </div>
+    <div class="circular-progress">
+      <div class="circular-progress-bar" id="progress-bar-2"></div>
+      <div class="circular-progress-fill">
+        <span id="progress-text-2">0%</span>
+        <span>completed</span>
+      </div>
+    </div>
+    <div class="circular-progress">
+      <div class="circular-progress-bar" id="progress-bar-3"></div>
+      <div class="circular-progress-fill">
+        <span id="progress-text-3">0%</span>
+        <span>completed</span>
+      </div>
+    </div>
+    <div class="circular-progress">
+      <div class="circular-progress-bar" id="progress-bar-4"></div>
+      <div class="circular-progress-fill">
+        <span id="progress-text-4">0%</span>
+        <span>completed</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const progressValues = [id="progress-text-1, id="progress-text-2, id="progress-text-3, id="progress-text-4];
+
+    function updateCircularProgress(progressId, percent) {
+      const progressBar = document.getElementById(`progress-bar-${progressId}`);
+      const progressText = document.getElementById(`progress-text-${progressId}`);
+      progressBar.style.backgroundImage = `conic-gradient(#4CAF50 0%, #4CAF50 ${percent}%, #f2f2f2 ${percent}%)`;
+      progressText.textContent = `${percent}%`;
+    }
+
+    progressValues.forEach((value, index) => {
+      updateCircularProgress(index + 1, value);
+    });
+  </script>
+</body>
+</html>
